@@ -858,10 +858,21 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f07000e;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int bar_background=0x7f07000d;
+        public static final int blue=0x7f070003;
+        public static final int darkblue=0x7f070008;
+        public static final int darkgreen=0x7f07000a;
+        public static final int darkorange=0x7f07000b;
+        public static final int darkpurple=0x7f070009;
+        public static final int darkred=0x7f07000c;
+        public static final int green=0x7f070005;
+        public static final int orange=0x7f070006;
+        public static final int purple=0x7f070004;
+        public static final int red=0x7f070007;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1086,6 +1097,7 @@ containing a value of this type.
         public static final int drawer_shadow=0x7f020057;
         public static final int ic_drawer=0x7f020058;
         public static final int ic_launcher=0x7f020059;
+        public static final int login=0x7f02005a;
     }
     public static final class id {
         public static final int action_bar=0x7f05001c;
@@ -1255,14 +1267,15 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int action_example=0x7f0a0013;
-        public static final int action_settings=0x7f0a0014;
+        public static final int action_example=0x7f0a0014;
+        public static final int action_settings=0x7f0a0015;
         public static final int app_name=0x7f0a000d;
-        public static final int navigation_drawer_close=0x7f0a0012;
-        public static final int navigation_drawer_open=0x7f0a0011;
-        public static final int title_section1=0x7f0a000e;
-        public static final int title_section2=0x7f0a000f;
-        public static final int title_section3=0x7f0a0010;
+        public static final int navigation_drawer_close=0x7f0a0013;
+        public static final int navigation_drawer_open=0x7f0a0012;
+        public static final int title_aboutus=0x7f0a0010;
+        public static final int title_feedback=0x7f0a000f;
+        public static final int title_settings=0x7f0a000e;
+        public static final int title_update=0x7f0a0011;
     }
     public static final class style {
         /** 
@@ -1288,9 +1301,16 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f0b008b;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
+        /**  the theme applied to the application or activity 
+ <style name="CustomActionBarTheme"
+           parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style> 
+ ActionBar styles 
+         */
+        public static final int MyActionBar=0x7f0b008d;
         /**  Mimic text appearance in select_dialog_item.xml 
          */
         public static final int TextAppearance_AppCompat_Base_CompactMenu_Dialog=0x7f0b0063;
