@@ -12,6 +12,8 @@
     <item name="darkorange" type="color">#FFFF8800</item>
     <item name="darkred" type="color">#FFCC0000</item>
  	<item name="bar_background" type="color">#277edf</item>
+ 	<item name="drawer_background" type="color">#2c2c2c</item>
+ 	<item name="page_background" type="color">#fbfbfb</item>
     
  
 </resources> 
