@@ -13,7 +13,9 @@
     <item name="darkred" type="color">#FFCC0000</item>
  	<item name="bar_background" type="color">#277edf</item>
  	<item name="drawer_background" type="color">#2c2c2c</item>
- 	<item name="page_background" type="color">#fbfbfb</item>
-    
+ 	<item name="page_background" type="color">#cfcfcf</item>
+ 	<item name="white" type="color">#ffffff</item>
+ 	<item name="sign_button" type="color">#277edf</item>
+    <item name="sign_button_pressed" type="color">#144383</item>
  
 </resources> 
