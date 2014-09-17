@@ -3,13 +3,15 @@ package com.cst.aaron.ismartedmonton;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
@@ -19,7 +21,7 @@ import android.widget.TextView;
  * Activity which displays a login screen to the user, offering registration as
  * well.
  */
-public class LoginActivity extends Activity {
+public class LoginActivity extends ActionBarActivity {
 	/**
 	 * A dummy authentication store containing known user names and passwords.
 	 * TODO: remove after connecting to a real authentication system.
@@ -55,6 +57,7 @@ public class LoginActivity extends Activity {
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 		mEmail = getIntent().getStringExtra(EXTRA_EMAIL);
 		mEmailView = (EditText) findViewById(R.id.email);
 		mEmailView.setText(mEmail);
@@ -85,14 +88,32 @@ public class LoginActivity extends Activity {
 					}
 				});
 	}
+	
+	 public void restoreActionBar() {
+	        android.app.ActionBar actionBar = getActionBar();
+	        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+	        actionBar.setDisplayShowTitleEnabled(true);
+	        
+	    }
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		super.onCreateOptionsMenu(menu);
+	
 		getMenuInflater().inflate(R.menu.login, menu);
-		return true;
+		restoreActionBar();
+		return super.onCreateOptionsMenu(menu);
 	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle item selection
+	    switch (item.getItemId()) {
+	        case R.id.action_home_login:
+	                 
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}
 	/**
 	 * Attempts to sign in or register the account specified by the login form.
 	 * If there are form errors (invalid email, missing fields, etc.), the

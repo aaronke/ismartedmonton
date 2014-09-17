@@ -39,7 +39,8 @@
 
         <LinearLayout
             style="@style/LoginFormContainer"
-            android:orientation="vertical" >
+            android:orientation="vertical" 
+            android:layout_marginTop="60dp">
 
             <LinearLayout 
                 android:id="@+id/linear_username"
@@ -97,13 +98,33 @@
 			         android:layout_margin="2dp"/>
 			 </LinearLayout>
 			 
-			 <!-- <LinearLayout
-			     android:layout_width="fill_parent"
-			     android:layout_height="25dp"
-			     android:id="@+id/linear_forget"
-			     >
-			     
-			 </LinearLayout> -->
+		 <LinearLayout
+		     android:id="@+id/linear_forget"
+		     android:layout_width="fill_parent"
+		     android:layout_height="42dp"
+		     android:orientation="horizontal"
+		     android:padding="2dp" 
+		     android:layout_marginTop="5dp">
+				<CheckBox 
+				    android:layout_width="wrap_content"
+			         android:layout_height="match_parent"
+			         android:layout_margin="2dp" 
+			         android:labelFor="@+id/remember_me_label" />
+			     <TextView 
+			         android:id="@+id/remember_me_label"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/remember_me"
+			         android:layout_marginLeft="10dp"/>
+			     <TextView 
+			         android:id="@+id/forget_password"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/forget_password"
+			         android:paddingLeft="30dp"
+			         android:clickable="true"/>
+			     		     
+			 </LinearLayout> 
             <Button
                 android:id="@+id/sign_in_button"
                 android:layout_width="fill_parent"
@@ -114,6 +135,52 @@
                 android:background="@drawable/sign_in_button_background"
                 android:text="@string/action_sign_in_register" 
                 />
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp">
+                <TextView 
+			         android:id="@+id/sign_up_label"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/sign_up"
+			         android:layout_marginLeft="10dp"/>
+			     <TextView 
+			         android:id="@+id/register_here"
+			         android:layout_width="wrap_content"
+			         android:layout_height="wrap_content"
+			         android:text="@string/register_here"
+			         android:paddingLeft="40dp"
+			         android:textSize="17sp"
+			         android:clickable="true"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/login_google"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/login_google_description"
+                    android:background="@drawable/login_google" />
+
+                <ImageButton
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/login_facebook"
+                    android:layout_width="150dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="20dp"
+                    android:contentDescription="@string/login_facebook_description"
+                    android:background="@drawable/login_facebook" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

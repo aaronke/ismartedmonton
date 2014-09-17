@@ -24,4 +24,12 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="sign_up">Want to sign up?</string>
+    <string name="register_here"><br>Register Here</br></string>
+    <string name="login_google_description">Login with Google</string>
+    <string name="login_facebook_description">Login with Facebook</string>
+    
+    <string name="action_home" type="color">Home</string>
 </resources>
