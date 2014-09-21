@@ -3,6 +3,7 @@ package com.cst.aaron.ismartedmonton;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -109,7 +110,8 @@ public class LoginActivity extends ActionBarActivity {
 	    // Handle item selection
 	    switch (item.getItemId()) {
 	        case R.id.action_home_login:
-	                 
+	             Intent intent=new Intent(getApplicationContext(), MainActivity.class);   
+	             startActivity(intent);
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
