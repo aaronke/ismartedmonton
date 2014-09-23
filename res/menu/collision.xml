@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.cst.aaron.ismartedmonton.LoginActivity" >
+
+    <item
+        android:id="@+id/action_home_login"
+        android:title="@string/action_home"
+        android:icon="@drawable/home"
+      	app:showAsAction="ifRoom|withText"    	
+        />
+
+</menu>

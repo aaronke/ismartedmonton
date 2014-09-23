@@ -1,21 +1,25 @@
 package com.cst.aaron.ismartedmonton;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity
-        implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+public class MainActivity extends ActionBarActivity implements OnClickListener
+        , NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -27,6 +31,7 @@ public class MainActivity extends ActionBarActivity
      */
     private CharSequence mTitle;
 
+    private ImageButton imageButton_collision;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +40,9 @@ public class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
         mTitle = getTitle();
-
+        
+        imageButton_collision=(ImageButton)findViewById(R.id.collision_category);
+        imageButton_collision.setOnClickListener(this);
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
@@ -50,7 +57,7 @@ public class MainActivity extends ActionBarActivity
                 .commit();*/
         
     }
-
+    
     public void onSectionAttached(int number) {
         switch (number) {
             case 1:
@@ -142,5 +149,20 @@ public class MainActivity extends ActionBarActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.collision_category:
+			Log.v("test", "collision clicked");
+			Intent intent=new Intent(getApplicationContext(), CollisionActivity.class);
+			startActivity(intent);
+			break;
+
+		default:
+			break;
+		}
+	}
 
 }

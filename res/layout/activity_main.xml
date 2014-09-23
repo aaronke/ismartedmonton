@@ -37,7 +37,7 @@
 	     <LinearLayout 
 	        style="@style/home_linear">
 	        <ImageButton 
-	            android:id="@+id/Traffic_category"
+	            android:id="@+id/traffic_category"
 	            style="@style/imagebutton_home"
 	            android:background="@drawable/bicycle_icon"/>
 	        <TextView 
@@ -49,7 +49,7 @@
 	     <LinearLayout 
 	        style="@style/home_linear">
 	        <ImageButton 
-	            android:id="@+id/Collision_category"
+	            android:id="@+id/collision_category"
 	            style="@style/imagebutton_home"
 	            android:background="@drawable/bicycle_icon"/>
 	        <TextView 

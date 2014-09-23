@@ -32,4 +32,7 @@
     <string name="login_facebook_description">Login with Facebook</string>
     
     <string name="action_home" type="color">Home</string>
+    <string name="title_activity_collision">Collision</string>
+    <string name="tab_collision">Prediction</string>
+    <string name="tab_collision_filter">Filter</string>
 </resources>

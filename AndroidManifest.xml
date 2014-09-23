@@ -7,7 +7,7 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
-
+   <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -27,6 +27,14 @@
             android:parentActivityName="com.cst.aaron.ismartedmonton.MainActivity"
             android:label="@string/title_activity_login"
             android:windowSoftInputMode="adjustResize|stateVisible" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cst.aaron.ismartedmonton.MainActivity"/>
+        </activity>
+        <activity 
+            android:name="com.cst.aaron.ismartedmonton.CollisionActivity"
+            android:parentActivityName="com.cst.aaron.ismartedmonton.MainActivity"
+            android:label="@string/title_activity_collision">
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cst.aaron.ismartedmonton.MainActivity"/>
