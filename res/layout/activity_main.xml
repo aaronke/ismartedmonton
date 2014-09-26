@@ -26,7 +26,7 @@
 	        <ImageButton 
 	            android:id="@+id/weather_category"
 	            style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"
+	            android:background="@drawable/weather_icon"
 	            />
 	        <TextView 
 	            android:id="@+id/weather_category_label"
@@ -39,7 +39,7 @@
 	        <ImageButton 
 	            android:id="@+id/traffic_category"
 	            style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/traffic_icon"/>
 	        <TextView 
 	            android:id="@+id/traffic_category_label"
 	            android:layout_width="wrap_content"
@@ -51,7 +51,7 @@
 	        <ImageButton 
 	            android:id="@+id/collision_category"
 	            style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/collision_icon"/>
 	        <TextView 
 	            android:id="@+id/collision_category_label"
 	            android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
 	        <ImageButton 
 	            android:id="@+id/bus_category"
 	           style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/bus_icon"/>
 	        <TextView 
 	            android:id="@+id/bus_category_label"
 	            android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
 	        <ImageButton 
 	            android:id="@+id/LRT_category"
 	            style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/lrt_icon"/>
 	        <TextView 
 	            android:id="@+id/LRT_category_label"
 	            android:layout_width="wrap_content"
@@ -99,7 +99,7 @@
 	        <ImageButton 
 	            android:id="@+id/construction_category"
 	           style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/construction_icon"/>
 	        <TextView 
 	            android:id="@+id/construction_category_label"
 	            android:layout_width="wrap_content"
@@ -111,7 +111,7 @@
 	        <ImageButton 
 	            android:id="@+id/snow_category"
 	           style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/snow_icon"/>
 	        <TextView 
 	            android:id="@+id/snow_category_label"
 	            android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
 	        <ImageButton 
 	            android:id="@+id/parking_category"
 	            style="@style/imagebutton_home"
-	            android:background="@drawable/bicycle_icon"/>
+	            android:background="@drawable/parking_icon"/>
 	        <TextView 
 	            android:id="@+id/parking_category_label"
 	            android:layout_width="wrap_content"
