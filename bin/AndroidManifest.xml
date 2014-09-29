@@ -33,8 +33,15 @@
         <activity 
             android:name="com.cst.aaron.ismartedmonton.CollisionActivity"
             android:parentActivityName="com.cst.aaron.ismartedmonton.MainActivity"
-            android:label="@string/title_activity_collision"
-            >
+            android:label="@string/title_activity_collision">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cst.aaron.ismartedmonton.MainActivity"/>
+        </activity>
+        <activity 
+            android:name="com.cst.aaron.ismartedmonton.Viewpager_test"
+            android:parentActivityName="com.cst.aaron.ismartedmonton.MainActivity"
+            android:label="@string/title_activity_collision">
             <meta-data 
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cst.aaron.ismartedmonton.MainActivity"/>

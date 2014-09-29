@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -31,7 +30,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
      */
     private CharSequence mTitle;
 
-    private ImageButton imageButton_collision;
+    private ImageButton imageButton_collision,imageButton_traffic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +41,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
         mTitle = getTitle();
         
         imageButton_collision=(ImageButton)findViewById(R.id.collision_category);
+        imageButton_traffic=(ImageButton)findViewById(R.id.traffic_category);
         imageButton_collision.setOnClickListener(this);
+        imageButton_traffic.setOnClickListener(this);
+        
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
@@ -51,7 +53,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getSupportFragmentManager();
+   //     FragmentManager fragmentManager = getSupportFragmentManager();
        /* fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
                 .commit();*/
@@ -153,16 +155,20 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
+		Intent intent = null;
 		switch (v.getId()) {
 		case R.id.collision_category:
 			Log.v("test", "collision clicked");
-			Intent intent=new Intent(getApplicationContext(), CollisionActivity.class);
-			startActivity(intent);
+			intent=new Intent(getApplicationContext(), CollisionActivity.class);
 			break;
-
+		case R.id.traffic_category:
+			Log.v("test", "traffic clicked");
+			intent=new Intent(getApplicationContext(), Viewpager_test.class);
+			break;
 		default:
 			break;
 		}
+		startActivity(intent);
 	}
 
 }

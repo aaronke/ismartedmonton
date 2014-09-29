@@ -3,6 +3,7 @@ package com.cst.aaron.ismartedmonton;
 import android.app.ActionBar;
 import android.app.ActionBar.TabListener;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -20,7 +21,7 @@ public class CollisionActivity extends ActionBarActivity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_collision);
 		actionBar=getActionBar();
-		
+		actionBar.setStackedBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.sign_button_pressed)));
 		webView=(WebView)findViewById(R.id.collision_web);
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.loadUrl("file:///android_asset/test.html");
