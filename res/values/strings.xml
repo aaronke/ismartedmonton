@@ -35,4 +35,20 @@
     <string name="title_activity_collision">Collision</string>
     <string name="tab_collision">Prediction</string>
     <string name="tab_collision_filter">Filter</string>
+    <string name="collisionPlot_title">Collision Prediction</string>
+    <string name="collision_filter_mvci">MVCI Collision</string>
+    <string name="collision_filter_cad">CAD Collision</string>
+    <string name="collision_filter_fatal_injury">Fatal and Injury Collision</string>
+    <string name="collision_filter_fatal_major">Fatal and Major Injuries</string>
+    <string name="collision_filter_odds">Odds of Fatality Occurrence</string>
+    <string name="collision_filter_ok">OK</string>
+    
+    <string-array name="collision_filter_spinner">
+        <item>City Wide</item>
+        <item>Downtown</item>
+        <item>North Division</item>
+        <item>Southeast Division</item>
+        <item>Southwest Division</item>
+        <item>West Division</item>
+    </string-array>
 </resources>

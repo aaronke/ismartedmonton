@@ -163,7 +163,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
 			break;
 		case R.id.traffic_category:
 			Log.v("test", "traffic clicked");
-			intent=new Intent(getApplicationContext(), Viewpager_test.class);
+			intent=new Intent(getApplicationContext(), TrafficActivity.class);
 			break;
 		default:
 			break;

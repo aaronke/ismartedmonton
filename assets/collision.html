@@ -19,13 +19,14 @@ $(function () {
         dates:[],
         data:[]   
     };
-	
-    var jsondata= window.CollisionAcitivity.readCSV();
+	var jsondata="null";
+    jsondata= window.Android.getData();
     var myObject=JSON.parse(jsondata);
     for (var i = 0; i <=myObject.data.length ; i++) {
         collisionPred.data.push(myObject.data(i));
         collisionPred.dates.push(myObject.dates(i));
     };
+    $("#test").text(jsondata);
     /*var url="http://www.its.ualberta.ca/app/wcpa/NW daily collisions worksheet.csv";
     $.get('data.csv', function(){
         var lines=data.split('\n');
@@ -131,6 +132,6 @@ function createCollisionChart(WindowsID,WindowsTitle,date,collisionData){
 <script src="js/exporting.js"></script>
 
 <div id="container" style="height: 400px"></div>
-<p>i am here </p>
+<p id="test">i am here </p>
 	</body>
 </html>

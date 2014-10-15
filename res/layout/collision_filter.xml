@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+	<CheckedTextView
+        android:id="@+id/checkedTextView_mvci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true"
+        android:text="@string/collision_filter_mvci" />
+	<CheckedTextView
+        android:id="@+id/checkedTextView_cad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/collision_filter_cad" />
+	<CheckedTextView
+        android:id="@+id/checkedTextView_fatal_injury"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/collision_filter_fatal_injury" />
+	<CheckedTextView
+        android:id="@+id/checkedTextView_fatal_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/collision_filter_fatal_major" />
+	<CheckedTextView
+        android:id="@+id/checkedTextView_odds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:text="@string/collision_filter_odds" />
+    <Spinner
+        android:id="@+id/spinner_division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/Collision_filter_ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:textSize="22sp"
+        android:background="@drawable/sign_in_button_background"
+        android:text="@string/collision_filter_ok" 
+                />
+</LinearLayout>
