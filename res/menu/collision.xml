@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.cst.aaron.ismartedmonton.LoginActivity" >
 
-<!--     <item
-        android:id="@+id/action_home_login"
-        android:title="@string/action_home"
-        android:icon="@drawable/home"
+   <item
+        android:id="@+id/action_filter"
+        android:title="@string/button_filter"
+        android:icon="@drawable/filter"
       	app:showAsAction="ifRoom|withText"    	
-        /> -->
+        /> 
 
 </menu>

@@ -19,8 +19,8 @@ public class SpeedMapView extends View{
 	Point point_13=new Point(330, 900);
 	Point point_14=new Point(330, 1100);
 	Point point_16=new Point(580, 1100);
-	int[] location_values_right={80,900,180,900,230,900,280,900,330,900,330,950,330,1000,330,1050,330,1100,380,1100,580,1100};
-	int[] location_values_left={80,915,180,915,230,915,280,915,315,915,315,965,315,1015,315,1065,315,1115,365,1115,580,1115};
+	int[] location_values_right={80,900,180,900,230,900,280,900,330,900,330,950,330,1000,330,1050,330,1100,380,1100,480,1100};
+	int[] location_values_left={80,915,180,915,230,915,280,915,315,915,315,965,315,1015,315,1065,315,1115,365,1115,480,1115};
 	int[] location_VSD_ID_right={1009,1007,1016,1036,1034,1032,1030,1028,1026,1018};
 	int[] location_VSD_ID_left={1010,1008,1017,1037,1035,1033,1031,1029,1027,1019};
 	int[] location_values_others_right={870,150,820,100,330,100,80,500,80,1400,330,1620,920,1620,920,550};
@@ -29,8 +29,8 @@ public class SpeedMapView extends View{
 	int[] location_values_17_11_left={650,865,920,865};
 	int[] location_vlaues_15_8_right={500,1500,450,1680};
 	int[] location_vlaues_15_8_left={515,1500,465,1680};
-	int[] location_values_16_10_right={580,1100,920,1100};
-	int[] location_values_16_10_left={580,1115,920,1115};
+	int[] location_values_16_10_right={480,1100,920,1100};
+	int[] location_values_16_10_left={480,1115,920,1115};
 	Point originalPoint=new Point();
 	Point destinationPoint=new Point();
 	Random random=new Random();

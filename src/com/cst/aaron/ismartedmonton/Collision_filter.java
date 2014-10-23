@@ -1,9 +1,10 @@
 package com.cst.aaron.ismartedmonton;
 
-import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -71,6 +72,10 @@ public class Collision_filter extends Fragment implements OnClickListener, OnIte
 		case R.id.Collision_filter_ok_button:
 			saveSettings();
 		//	FragmentTransaction fTransaction= getActivity().getFragmentManager().beginTransaction();
+			FragmentTransaction fTransaction=getActivity().getSupportFragmentManager().beginTransaction();
+			Collision_chart fragment=new Collision_chart();
+			fTransaction.replace(R.id.parent_relativelayout, fragment);
+			fTransaction.commit();
 			break;
 		default:
 			break;

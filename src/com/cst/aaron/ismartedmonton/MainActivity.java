@@ -30,7 +30,7 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
      */
     private CharSequence mTitle;
 
-    private ImageButton imageButton_collision,imageButton_traffic;
+    private ImageButton imageButton_collision,imageButton_traffic,imageButton_weather;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +42,10 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
         
         imageButton_collision=(ImageButton)findViewById(R.id.collision_category);
         imageButton_traffic=(ImageButton)findViewById(R.id.traffic_category);
+        imageButton_weather=(ImageButton)findViewById(R.id.weather_category);
         imageButton_collision.setOnClickListener(this);
         imageButton_traffic.setOnClickListener(this);
+        imageButton_weather.setOnClickListener(this);
         
         // Set up the drawer.
         mNavigationDrawerFragment.setUp(
@@ -164,6 +166,9 @@ public class MainActivity extends ActionBarActivity implements OnClickListener
 		case R.id.traffic_category:
 			Log.v("test", "traffic clicked");
 			intent=new Intent(getApplicationContext(), TrafficActivity.class);
+			break;
+		case R.id.weather_category:
+			intent=new Intent(getApplicationContext(), WeatherActivity.class);
 			break;
 		default:
 			break;

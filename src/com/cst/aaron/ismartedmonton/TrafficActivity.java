@@ -33,6 +33,7 @@ public class TrafficActivity extends Activity{
 		setContentView(mapView);
 		actionBar=getActionBar();
 		actionBar.setHomeButtonEnabled(true);	
+		actionBar.setTitle("Traffic");
 		//final DownloadTask task=new DownloadTask();
 		
 		final Handler mHandler=new Handler();
